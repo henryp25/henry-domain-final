@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Agbalumo';
+    src: url('../public/font/Agbalumo-Regular.ttf');
+}
+
+.nav{
+    background-color: #434343;
+    font-family: 'Agbalumo';
+}
+.logo{
+    font-family: 'Agbalumo';
+    font-size: 30px;
+    text-emphasis: center;
+    color: brown;
+    size   : 20px;
+    height: 50px;
+    display: block;
+}
+
+.searchBar{
+    width: auto;
+    height: auto;
+    display: block;
+}
