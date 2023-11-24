@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchBar from './SearchBar'
+import Link from 'next/link'
 import '../../styles/globals.css'
 
 function Navigation() {
@@ -12,8 +13,16 @@ function Navigation() {
             </div>
             <div>
               <ul className='flex justify-center space-x-4 text-3xl'>
-                  <li className='hover:text-slate-100'><a href="/">Home</a></li>
-                  <li className='hover:text-slate-100'><a href="pages/about">About</a></li>
+                  <li className='hover:text-slate-100'>
+                    <Link href="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className='hover:text-slate-100'>
+                    <Link href="pages/about">
+                      About
+                    </Link>
+                  </li>
               </ul>
             </div>
             <div className='flex justify-center' class='searchBar'>
