@@ -18,14 +18,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <script
-            dangerouslySetInnerHTML={{
-              __html:
-                `(function(w,l){` +
-                `w[l] = w[l] || [];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});` +
-                `})(window,'dataLayer');`,
-            }}
-          />
         <Script src={`https://www.googletagmanager.com/gtm.js?id=GTM-K6BFSLDH`} />
       <body>
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6BFSLDH"
