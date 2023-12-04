@@ -1,8 +1,8 @@
+'use client'
 import React from 'react'
 
-
 export const  Metadata = {
-  title: 'Ttiitle',
+  title: 'About Page',
   description: '...',
 }
 export default function About() {
