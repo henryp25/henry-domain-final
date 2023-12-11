@@ -5,10 +5,10 @@ import '../../styles/globals.css'
 
 function Navigation() {
   return (
-    <nav class='nav'>
+    <nav className='nav'>
       <div className='max-w- mx-auto  border border-red-400'>
         <div className='flex justify-between mx-auto'>
-            <div class='logo'>
+            <div className='logo'>
               Henry Price
             </div>
             <div>
@@ -25,7 +25,7 @@ function Navigation() {
                   </li>
               </ul>
             </div>
-            <div className='flex justify-center' class='searchBar'>
+            <div className='searchBar flex justify-center'>
               <SearchBar />
             </div>
           </div>
