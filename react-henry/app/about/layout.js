@@ -9,6 +9,13 @@ import Head from 'next/head'
 export const metadata = {
     title: 'About Page ',
     description: 'Learn about how i have developed my skills within development with links to each process or function created',
+    alternates: {
+        canonical: '/about',
+        languages: {
+            'en-US': '/en-US',
+            'de-DE': '/de-DE',
+        },
+    }
 }
 
 
