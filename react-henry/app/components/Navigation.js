@@ -19,8 +19,13 @@ function Navigation() {
                     </Link>
                   </li>
                   <li className='hover:text-slate-100'>
-                    <Link href="/about">
+                    <Link href="/about/page">
                       About
+                    </Link>
+                  </li>
+                  <li className='hover:text-slate-100'>
+                    <Link href="/blog/list">
+                      blog
                     </Link>
                   </li>
               </ul>
