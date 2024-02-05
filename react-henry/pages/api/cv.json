@@ -1,0 +1,145 @@
+{
+    "name": "Henry Price",
+    "position": "Senior Technical SEO Lead",
+    "company": "Merkle",
+    "contact": {
+      "email": "henry_555@live.com",
+      "telephone": "+44 7850 600263",
+      "address": "87B Helix Road, Brixton, SW2 2JR"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/henry-price-1b1b0a12a/",
+      "twitter": "https://twitter.com/henryprice555"
+    },
+
+    "about": "I am a committed and diligent professional serving as the Senior Technical SEO Lead at Merkle Inc. With nearly six years of experience in the SEO field, I have developed a strong proficiency in data analysis across multiple platforms, including Google Analytics, Google Search Console, and WebpageTest, along with expertise in Screaming Frog, HTML, JavaScript, and CSS. My goal is to transition to an in-house role for Forbes where I can significantly contribute to a website's SEO strategy and take a leadership role in guiding product development from inception to completion.",
+    "experience": [
+      {
+        "role": "Senior Technical SEO Lead & Web Performance Specialist",
+        "company": "Merkle",
+        "duration": "October 2022 - Current",
+        "responsibilities": [
+          "Leading a team of 3 technical SEO managers & specialists",
+          "Technical SEO Lead for 2 of our biggest clients with a heavy focus on e-commerce (+3m URLs)",
+          "Developing a year-long roadmap to improve crawl rate & indexability",
+          "Led a full migration project from start to finish (2 years)",
+          "Built daily impact reports",
+          "Led external and internal training about the importance of technical SEO",
+          "Created a digital sustainability offering",
+          "Created a CrUX History API tracking tool"
+        ]
+      },
+      {
+        "role": "Technical SEO Lead & Web Performance Specialist",
+        "company": "Merkle",
+        "duration": "July 2021 – October 2022",
+        "responsibilities": [
+          "Developing technical SEO strategies for clients",
+          "Served as the Technical SEO Operations lead for a client managing 62 websites",
+          "Managed large-scale projects for e-commerce sites",
+          "Utilized Node.js expertise to develop multiple automation tools",
+          "Engineered a fully automated web performance tracking tool"
+        ]
+      },
+      {
+        "role": "Technical SEO Senior Associate",
+        "company": "Merkle",
+        "duration": "July 2020 – July 2021",
+        "responsibilities": [
+          "Specialized in technical SEO",
+          "Worked across 12 different websites & 4 different platforms",
+          "Enhanced team expertise in web performance",
+          "Developed an internal JavaScript training program",
+          "Directed large-scale technical projects",
+          "Spearheaded cross-channel initiatives",
+          "Led analytics training within the department"
+        ]
+      },
+      {
+        "role": "SEO Associate",
+        "company": "Merkle",
+        "duration": "June 2019 – July 2020"
+      },
+      {
+        "role": "SEO Junior Associate",
+        "company": "Merkle",
+        "duration": "Jul 2018 – Jun 2019"
+      }
+    ],
+    "digital_skills": {
+      "content_seo": [
+        "Keyword research",
+        "On-page optimisation",
+        "Content strategy",
+        "Gap analysis",
+        "Content clustering",
+        "Cannibalisation resolution",
+        "International SEO",
+        "Personalisation",
+        "Video and multimedia",
+        "Mobile-first",
+        "Intent Mapping"
+      ],
+      "technical_seo": [
+        "Architecture",
+        "Site speed",
+        "XML sitemaps",
+        "Migrations",
+        "Auditing and troubleshooting",
+        "Structured data",
+        "Crawl budget analysis",
+        "Robots.txt",
+        "Server log analysis"
+      ],
+      "total_search": [
+        "Building Looker Studio reports",
+        "Blind spot analysis",
+        "Ad copy analysis",
+        "Landing page analysis"
+      ],
+      "ux_cro": [
+        "Information architecture",
+        "Conversion funnel analysis",
+        "Heatmaps and session recording",
+        "Segmentation",
+        "Accessibility",
+        "Persona Development"
+      ],
+      "platforms": [
+        "Excel",
+        "Adobe Analytics",
+        "GSC",
+        "GA4",
+        "Screaming Frog",
+        "SEMRush",
+        "Linkdex",
+        "BrightEdge",
+        "Jira",
+        "Confluence",
+        "PMAX",
+        "Google Ad Planner",
+        "Power BI",
+        "Adobe Experience Manager",
+        "Figma"
+      ]
+    },
+    "education": {
+      "university": "Bath Spa University",
+      "degree": "BA (Hons) Business and Management",
+      "grade": "2:1",
+      "duration": "September 2014 - June 2018",
+      "key_modules": [
+        "Marketing",
+        "International Business"
+      ],
+      "a_levels": {
+        "year": "2011-2013",
+        "subjects": [
+          "Business Management",
+          "History",
+          "Economics"
+        ]
+      }
+    }
+  }
+  

@@ -3,6 +3,9 @@ import Navigation from '../app/components/Navigation'
 import HeaderBanner from '../app/components/HeaderBanner'
 import Meta from '../app/components/metaData'
 import RootLayout from '../app/layout'
+import {sql} from '@vercel/postgres'
+
+
 
 
 export default function Home() {

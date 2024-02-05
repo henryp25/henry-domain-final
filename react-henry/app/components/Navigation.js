@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import SearchBar from './SearchBar'
 import Link from 'next/link'
@@ -19,12 +20,12 @@ function Navigation() {
                     </Link>
                   </li>
                   <li className='hover:text-slate-100'>
-                    <Link href="/about/page">
+                    <Link href="/about">
                       About
                     </Link>
                   </li>
                   <li className='hover:text-slate-100'>
-                    <Link href="/blog/list">
+                    <Link href="/blog">
                       blog
                     </Link>
                   </li>

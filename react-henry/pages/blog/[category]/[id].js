@@ -1,8 +1,10 @@
+import Meta from "@/app/components/metaData";
 import { getAllPostIds, getPostData } from "@/app/lib/posts";
+import Date from '../../../app/components/date'
 
 export async function getStaticProps ({params}){
   console.log(params)
-  const postData = getPostData(params.id);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
@@ -24,14 +26,20 @@ export async function getStaticPaths () {
 
 export default function blogDetail({postData}) {
     return (
-      <div>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        {postData.date}
-        
-      </div>
+      <>
+        <Meta title={postData.title} description={postData.description} />
+        <div>
+          {postData.title}
+          <br />
+          {postData.id}
+          <br />
+          <Date dateString={postData.date} />
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          
+        </div>
+      </>
+
     )
   }
 
