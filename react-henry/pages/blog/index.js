@@ -1,6 +1,8 @@
 import React from 'react'
 import { getSortedPostsData } from '../../app/lib/posts'
 import Meta from '@/app/components/metaData'
+import '../../styles/blog.css'
+
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -12,7 +14,7 @@ export async function getStaticProps() {
 }
 export default function Blog ({ allPostsData }) { 
   return (
-    <div>
+    <div className='blog'>
       <h2>
         Blog
       </h2>

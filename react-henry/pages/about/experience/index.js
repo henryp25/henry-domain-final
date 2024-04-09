@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../styles/cv.css'
-import cvFile from '../../api/cv.json'
+import cvFile from '../../../app/backendData/cv.json'
 import Image from 'next/image';
 
 

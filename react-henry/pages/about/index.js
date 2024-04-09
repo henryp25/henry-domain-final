@@ -3,6 +3,9 @@ import RootLayout from '../../app/layout'
 import Meta from '@/app/components/metaData'
 
 
+async function getServerSideProps() {
+  
+}
 
 // export const metadata = {
 //     title: 'About Page ',

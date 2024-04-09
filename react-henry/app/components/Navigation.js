@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import SearchBar from './SearchBar'
+import SearchBar from '../components/SearchBar/SearchBar'
 import Link from 'next/link'
 import '../../styles/globals.css'
 
@@ -13,7 +13,7 @@ function Navigation() {
               Henry Price
             </div>
             <div>
-              <ul className='flex justify-center space-x-4 text-3xl'>
+              <ul id="navbar" className='flex justify-center space-x-4 text-3xl'>
                   <li className='hover:text-slate-100'>
                     <Link href="/">
                       Home
@@ -26,7 +26,12 @@ function Navigation() {
                   </li>
                   <li className='hover:text-slate-100'>
                     <Link href="/blog">
-                      blog
+                      Blog
+                    </Link>
+                  </li>
+                  <li className='hover:text-slate-100'>
+                    <Link href="/tools">
+                      Tools
                     </Link>
                   </li>
               </ul>

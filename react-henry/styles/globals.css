@@ -7,10 +7,11 @@
     src: url('../public/font/Agbalumo-Regular.ttf');
 }
 
-.nav{
+.nav {
     background-color: #434343;
     font-family: 'Agbalumo';
 }
+
 .logo{
     font-family: 'Agbalumo';
     font-size: 30px;

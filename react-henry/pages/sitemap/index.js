@@ -1,13 +1,14 @@
 import React from 'react'
 import { sql } from '@vercel/postgres'
 import pg from 'pg';
+import '../../styles/sitemap.css'
 
 // require('dotenv').config({ path: '.env.local' });
 const currentDate = new Date().toDateString();
 
 
 export async function getServerSideProps() {
-    const gatherURLs = await fetch('/api/createDataBase')
+    const gatherURLs = await fetch(`${process.env.SITE_URL}/api/createDataBase`)
     const pool = new pg.Pool({
         connectionString: process.env.POSTGRES_URL,
         ssl: { rejectUnauthorized: false }
@@ -15,10 +16,7 @@ export async function getServerSideProps() {
     const query = `SELECT * FROM posts`;
     const res = await pool.query(query)
     const posts = res.rows
-    posts.forEach(post => {
-        post.date = post.date.toISOString();
-      });
-    console.log(posts[0].title)
+
     return { props: { posts } };
 }
 
@@ -26,14 +24,21 @@ export async function getServerSideProps() {
 export default function htmlSitemap({posts}) {
     return (
         <>
-            <h1>HTML Sitemap</h1>
-
-            {posts.map((post) => (
-                <div key={post.id}>
-                    <h2>{post.title}</h2>
+            <div>
+                <div>
+                    <h1>HTML Sitemap</h1>
                 </div>
-            ))}
-            <h2>Testing URLs</h2>
+
+                <div>
+                    <ul>
+                    {posts.map((post) => (
+                        <li key={post.id}>
+                            <a href={post.url}>{post.title}</a>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }

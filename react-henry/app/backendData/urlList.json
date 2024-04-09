@@ -1,0 +1,29 @@
+{
+    "pages": [
+        {
+            "url": "'/blog/blog/ssg-ssr'",
+            "title": "Server Side Rendering",
+            "categories": "blog"
+        },
+        {
+            "url": "/blog",
+            "title": "Blog Listing",
+            "categories": "blog"
+        },
+        {
+            "url": "/about/page",
+            "title": "About Listing Page",
+            "categories": "about"
+        },
+        {
+            "url": "/about/test",
+            "title": "Henry Testing",
+            "categories": "about"
+        },
+        {
+            "url": "/blog/blog/pre-rendering",
+            "title": "Two Forms of Pre-rendering",
+            "categories": "blog"
+        }
+    ]
+}

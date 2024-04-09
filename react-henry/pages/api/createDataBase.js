@@ -1,5 +1,6 @@
 import pg from 'pg';
 import { sql } from '@vercel/postgres';
+import routeURL from 'app/backendData/urlList'
 // require('dotenv').config({ path: '.env.local' });
 const currentDate = new Date().toDateString();
 
@@ -9,43 +10,19 @@ const pool = new pg.Pool({
 });
 
 
-const listofPosts = [
-    {
-        url: '/blog/blog/ssg-ssr',
-        title: 'Server Side Rendering',
-        date: currentDate,
-        categories: 'blog'
-    },
-    {
-        url: '/blog',
-        title: 'Blog Listing',
-        date: currentDate,
-        categories: 'blog'
-    },
-    {
-        url: '/about/page',
-        title: 'About Listing Page',
-        date: currentDate,
-        categories: 'about'
-    },
-    {
-        url: '/about/test',
-        title: 'Henry Testing',
-        date: currentDate,
-        categories: 'about'
-    },
-]
+const listofPosts = JSON.parse(JSON.stringify(routeURL.pages))
 
 export default async function handler(req,res) {
-    console.log(pool)
     try{
         for (const post of listofPosts) {
+            console.log(post)
             const insertQuery = `
-                INSERT INTO posts (url, title, date, categories)
-                VALUES ($1, $2, $3, $4)
+                INSERT INTO posts (url, title, categories)
+                VALUES ($1, $2, $3)
+                ON CONFLICT (url) DO NOTHING
                 RETURNING *;`;
             try {
-                const res = await pool.query(insertQuery, [post.url, post.title, post.date, post.categories]);
+                const res = await pool.query(insertQuery, [post.url, post.title, post.categories]);
                 console.log('Inserted data:', res.rows[0]);
             } catch (err) {
                 console.error('Error inserting data:', err);
