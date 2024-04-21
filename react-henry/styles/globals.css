@@ -1,29 +1,134 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
-    font-family: 'Agbalumo';
-    src: url('../public/font/Agbalumo-Regular.ttf');
+    font-family: 'Poppins-Bold';
+    src: url('../public/font/Poppins-Bold.ttf');
 }
 
-.nav {
-    background-color: #434343;
-    font-family: 'Agbalumo';
-}
-
-.logo{
-    font-family: 'Agbalumo';
-    font-size: 30px;
-    text-emphasis: center;
-    color: brown;
-    size   : 20px;
-    height: 50px;
-    display: block;
+body {
+    font-family: 'Poppins-Bold';
+    background-color: #282c34;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .searchBar{
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
 }
+
+/* Navbar */
+.nav {
+    display: flex;
+    background-color: #434343;
+    font-family: 'Agbalumo';
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+  
+.nav-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* This is the Tailwind color for red-400 */
+
+
+
+
+
+.logo {
+    font-family: 'Agbalumo';
+    font-size: 23px;
+    color: brown;
+    size   : 20px;
+    height: 50px;
+    max-width: 50px;
+    font-weight: bold;
+}
+
+.nav-content ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item {
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.nav-item a {
+    color: #fff;
+    font-size: 45px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+color: red;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    background-color: #434343;
+    justify-content: center;
+    font-family: 'Agbalumo';
+    padding: 0 1rem;
+    width: 100%;
+}
+.footer-container ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul li {
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+
+.nav-item ul li a {
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .nav-item a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-item a {
+        font-size: 15px;
+    }
+    .logo {
+        font-family: 'Agbalumo';
+        font-size: 15px;
+        color: brown;
+        height: 50px;
+        max-width: 50px;
+        font-weight: bold;
+    }
+}
+

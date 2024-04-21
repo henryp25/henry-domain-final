@@ -4,6 +4,7 @@ import HeaderBanner from '../app/components/Onpage/HeaderBanner'
 import Meta from '../app/components/metaData'
 import RootLayout from '../app/layout'
 import '../styles/homepage.css'
+import '../styles/globals.css'
 
 export default function Home() {
   return (

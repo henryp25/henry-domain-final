@@ -6,8 +6,8 @@ function footer() {
   return (
     <>
         <footer className='nav'>
-            <div>
-                <ul className='flex justify-center space-x-7 ' >
+            <div className='footer-container'>
+                <ul className='footer-list'>
                     <li>
                         <Link href="https://www.linkedin.com/in/henry-price-1a9b2b1b9/" target="_blank">LinkedIn</Link>
                     </li>

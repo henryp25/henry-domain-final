@@ -1,3 +1,19 @@
+@media (min-width: 600px ){
+    .currency-converter{
+        width: 80%;
+        max-width: 960px        
+    }
+
+}
+
+@media (min-width: 600px) {
+    .user-input select, .user-input input, .curr-button {
+        padding: 10px;
+        font-size: 24px;
+        width: 150px; /* Increase the width for better visibility */
+    }
+}
+
 .header{
     display: flex;
     justify-content:center;
@@ -77,21 +93,24 @@ h2{
     padding: 5px;
     margin: auto;
     font-size: 20px;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     text-align: center;
 }
 .user-input input{
     padding: 5px;
     margin: auto;
     font-size: 20px;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     text-align: center;
 }
 .user-input option{
     padding: 5px;
     margin: auto;
     font-size: 20px;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     text-align: center;
 }
 

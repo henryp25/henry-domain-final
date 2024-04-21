@@ -2,6 +2,7 @@ import React from 'react'
 import { getSortedPostsData } from '../../app/lib/posts'
 import Meta from '@/app/components/metaData'
 import '../../styles/blog.css'
+import '../../styles/globals.css'
 
 
 export async function getStaticProps() {

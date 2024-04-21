@@ -1,6 +1,7 @@
 import React from 'react'
 import RootLayout from '../../app/layout'
 import Meta from '@/app/components/metaData'
+import '../../styles/globals.css'
 
 
 async function getServerSideProps() {

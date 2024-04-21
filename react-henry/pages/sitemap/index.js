@@ -2,6 +2,7 @@ import React from 'react'
 import { sql } from '@vercel/postgres'
 import pg from 'pg';
 import '../../styles/sitemap.css'
+import '../../styles/globals.css'
 
 // require('dotenv').config({ path: '.env.local' });
 const currentDate = new Date().toDateString();

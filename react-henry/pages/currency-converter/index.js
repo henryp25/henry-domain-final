@@ -2,6 +2,7 @@ import React from 'react'
 import CurrencyConverter from '../../app/components/currencyConvertor/CurrencyConverter';
 import ErrorBoundary from '../../pages/api/ErrorBoundary';
 import '../../styles/currency-converter.css'
+import '../../styles/globals.css'
 
 function currencyConverter() {
   return (
