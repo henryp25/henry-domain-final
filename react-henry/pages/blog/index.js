@@ -1,6 +1,7 @@
 import React from 'react'
 import { getSortedPostsData } from '../../app/lib/posts'
 import Meta from '@/app/components/metaData'
+import Image from 'next/image'
 import '../../styles/blog.css'
 import '../../styles/globals.css'
 
@@ -16,17 +17,21 @@ export async function getStaticProps() {
 export default function Blog ({ allPostsData }) { 
   return (
     <div className='blog'>
+      <Meta title='SEO Blog' description='Explore cutting-edge SEO strategies with Henry Price, a seasoned Tech SEO Specialist. Dive into insightful analyses, tips, and trends that drive visibility and traffic in the ever-evolving digital landscape. Perfect for marketers and businesses aiming for the top.' />
       <h2>
         Blog
       </h2>
+      <Image src='/images/blog-header.jpg' alt='SEO' width={500} height={300} />
       <ul>
-        {allPostsData.map(({ id, date, title }) => (
+        {allPostsData.map(({ id, date, title, author }) => (
           <li key={id}>
-            Title: {title}
+            
             <br />
-             <a href={`/blog/blog/${id}`}><b>Click here for {id}</b></a>
+             <a href={`/blog/blog/${id}`}><b>{title}</b></a>
+             <br />
+             Written by: {author}
             <br />
-            {date}
+            Date Published: {date}
           
           </li>
         ))}

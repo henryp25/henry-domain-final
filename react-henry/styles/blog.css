@@ -1,6 +1,57 @@
-.blog {
-    flex: auto;
-    min-height: 100vh;
-    width: 100%;
+@media screen and (max-width: 600px){
+    .blog-content{
+        width: 100%;
+    
+    }
 
+}
+
+@media screen and (max-width: 380px){
+    .blog-content{
+        width: 10px;
+    
+    }
+
+}
+
+
+
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10PX;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.blog ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-style: oblique;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+
+}
+.blog ul li:before {
+    content: url('../public/images/icons8-blog-24.png');
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    
 }

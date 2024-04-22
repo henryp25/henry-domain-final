@@ -9,7 +9,7 @@ function footer() {
             <div className='footer-container'>
                 <ul className='footer-list'>
                     <li>
-                        <Link href="https://www.linkedin.com/in/henry-price-1a9b2b1b9/" target="_blank">LinkedIn</Link>
+                        <Link href="https://www.linkedin.com/in/henry-price-9ab362b4/" target="_blank">LinkedIn</Link>
                     </li>
                     <li>
                         <Link href="/sitemap"> Sitemap</Link>

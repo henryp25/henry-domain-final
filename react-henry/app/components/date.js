@@ -5,7 +5,9 @@ export default function Date({ dateString }) {
 
   return (
     <div>
-        <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')} </time>
+        <p>
+          Date Published: <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')} </time>
+        </p>
     </div>
   )
 }

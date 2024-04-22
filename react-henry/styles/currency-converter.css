@@ -1,17 +1,10 @@
-@media (min-width: 600px ){
-    .currency-converter{
-        width: 80%;
-        max-width: 960px        
-    }
 
-}
-
-@media (min-width: 600px) {
-    .user-input select, .user-input input, .curr-button {
+@media (max-width: 600px) {
+    .user-input label{
         padding: 10px;
-        font-size: 24px;
-        width: 150px; /* Increase the width for better visibility */
+        font-size: 15px;/* Increase the width for better visibility */
     }
+    
 }
 
 .header{
@@ -42,6 +35,24 @@ h2{
     border-radius: 5px;
     background-color: #5a606c;
     color: #000000;
+}
+.currency-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin: 5px;
+}
+
+.productDescription{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin: 5px;
+
 }
 
 

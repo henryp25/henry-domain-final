@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import {useState, useCallback, useEffect} from 'react'
 import SearchBar from '../components/SearchBar/SearchBar'
 import Link from 'next/link'
 import '../../styles/globals.css'
