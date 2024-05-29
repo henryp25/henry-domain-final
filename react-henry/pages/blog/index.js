@@ -18,9 +18,9 @@ export default function Blog ({ allPostsData }) {
   return (
     <div className='blog'>
       <Meta title='SEO Blog' description='Explore cutting-edge SEO strategies with Henry Price, a seasoned Tech SEO Specialist. Dive into insightful analyses, tips, and trends that drive visibility and traffic in the ever-evolving digital landscape. Perfect for marketers and businesses aiming for the top.' />
-      <h2>
-        Blog
-      </h2>
+      <h1>
+        Technical SEO Blog
+      </h1>
       <Image src='/images/blog-header.jpg' alt='SEO' width={500} height={300} />
       <ul>
         {allPostsData.map(({ id, date, title, author }) => (
