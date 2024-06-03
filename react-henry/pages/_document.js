@@ -1,9 +1,11 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="vulcan">
         <Head>
+          <meta name="description" content="testing" />
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             <Script id="google-tag-manager" strategy="afterInteractive">
             {`
