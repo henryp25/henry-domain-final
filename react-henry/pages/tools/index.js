@@ -13,7 +13,11 @@ function Tools() {
           <li className='toolLink'>
             <Link href="/currency-converter">Currency Convertor</Link>
             <p>
-              Description:
+              Description
+              <p>
+                A simple currency converter to convert between different currencies
+              </p>
+
             </p>
           </li>
         </ul>

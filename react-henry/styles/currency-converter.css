@@ -1,177 +1,193 @@
+/* General Styles */
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+} */
 
-@media (max-width: 600px) {
-    .user-input label{
-        padding: 10px;
-        font-size: 15px;/* Increase the width for better visibility */
-    }
-    
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.header{
-    display: flex;
-    justify-content:center;
-    padding: 0 20px;
-    background-color: #282c34;
-    color: rgba(208, 5, 5, 0.771);
+p {
+    line-height: 1.6;
 }
 
-h1{
-    font-size: 4em;
-    color: #61dafb;
-}
-h2{
+/* Header */
+.header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: #61dafb;
 }
 
-.currency-converter{
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Product Description */
+.productDescription {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #282c34;
+}
+
+.productDescription p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Currency Container */
+.currency-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #282c34;
+}
+
+/* Currency Box */
+.currency-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #5a606c;
-    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
-.currency-container{
-    display:flex;
+
+.currency-box h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+/* Selection Table */
+.selectionTable {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 6px;
-    margin: 5px;
-}
-
-.productDescription{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 6px;
-    margin: 5px;
-
-}
-
-
-/* Conversion Box/input */
-
-.currency-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-
-.currency-box h2{
-    padding: 5px;
-    margin: 5px;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    flex-direction: column;
-}
-
-.selectionTable{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 5px;
-    border-style: ridge;
-    border: 3px black;
-    border-radius: 5px;
-    background-color: #61dafb;
-    color: #282c34;
-}
-
-.input-box{
     padding: 10px;
     margin: 10px;
-    border-radius: 5px;
-}
-
-.user-input{
-    display: flex;
-    flex-direction: column;
-    background-color: antiquewhite;
-    border-bottom: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-}
-.user-input select{
-    padding: 5px;
-    margin: auto;
-    font-size: 20px;
-    width: 100%;
-    max-width: 100px;
-    text-align: center;
-}
-.user-input input{
-    padding: 5px;
-    margin: auto;
-    font-size: 20px;
-    width: 100%;
-    max-width: 100px;
-    text-align: center;
-}
-.user-input option{
-    padding: 5px;
-    margin: auto;
-    font-size: 20px;
-    width: 100%;
-    max-width: 100px;
-    text-align: center;
-}
-
-.user-input label{
-    padding: 5px;
-    margin: auto;
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;}
-
-#currency{
-    width: auto;
-}
-
-/* Conversion Data/Output */
-.conversion-box{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
     background-color: #282c34;
     color: #61dafb;
 }
-.conversion-box p{
-    font-size: 55px;
+
+.input-box {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* User Input */
+.user-input {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.1em;
+    border-radius: 8px;
+}
+
+.user-input select,
+.user-input input,
+.user-input option {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user-input label {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Conversion Box */
+.conversion-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #282c34;
+    color: #61dafb;
+}
+
+.conversion-box p {
+    font-size: 2.5em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 /* Conversion Button */
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
-    padding: 5px;
-    margin: 5px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
 }
 
-.curr-button{
-    padding: 5px;
-    margin: 5px;
-    font-size: 20px;
+.curr-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
     background-color: #61dafb;
     color: #282c34;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
-.curr-button:hover{
+
+.curr-button:hover {
     background-color: #282c34;
     color: #61dafb;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .currency-box h2 {
+        font-size: 1.5em;
+    }
+
+    .conversion-box p {
+        font-size: 1.8em;
+    }
+
+    .curr-button {
+        font-size: 1em;
+    }
 }
