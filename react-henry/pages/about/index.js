@@ -1,7 +1,7 @@
 import React from 'react'
 import RootLayout from '../../app/layout'
 import Meta from '@/app/components/metaData'
-import '../../styles/globals.css'
+import '../../styles/about.css'
 
 
 async function getServerSideProps() {
@@ -24,7 +24,57 @@ export default function About() {
   return (
     <>
       <Meta title="About" description="About page" />
-        <div>page</div>
+      <div>
+          <div class="container">
+            <header>
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
+                <h1>John Doe</h1>
+                <p>Web Developer | Designer | Content Creator</p>
+                <div class="social-media">
+                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                </div>
+            </header>
+
+          <section class="about">
+              <h2>About Me</h2>
+              <p>
+                  Hello! Henry, a passionate web developer with a love for creating beautiful and functional websites. 
+                  With a background in SEO, I have a unique perspective on how to create user-friendly and aesthetically 
+                  pleasing digital experiences. When I'm not coding, you can find me exploring new technologies, creating 
+                  content, or enjoying the great outdoors.
+              </p>
+          </section>
+
+          <section class="skills">
+              <h2>Skills</h2>
+              <ul>
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>UI/UX Design</li>
+                  <li>Content Creation</li>
+              </ul>
+          </section>
+
+          <section class="hobbies">
+              <h2>Hobbies</h2>
+              <ul>
+                  <li>Photography</li>
+                  <li>Traveling</li>
+                  <li>Gaming</li>
+                  <li>Reading</li>
+                  <li>Cooking</li>
+              </ul>
+          </section>
+
+          <footer>
+              <p>&copy; 2024 Henry Price. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
     </>
 
   )
