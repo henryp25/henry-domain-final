@@ -1,0 +1,147 @@
+.toolsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+}
+
+/* Header Content fo tools */
+.tools-Content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #f2f2f2b4;
+}
+
+.tools-Content h1{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+
+.tools-Content p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* List of seperate tools */
+.toolsContainer .toolList{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+    box-shadow: 0cqb;
+
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.toolsContainer .toolList ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+    box-shadow: 0cqb;
+
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.toolLink{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0cqb;
+    border: 1px solid #000;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.toolsContainer .toolList ul li{
+    list-style: none;
+    text-transform: capitalize;
+    
+}
+
+.toolsContainer .toolList ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.toolsContainer .toolList ul li a :hover{
+    color: red;
+}
+
+.toolsContainer .toolList ul li p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Pagination */
+.toolPagination {
+    width: 50vw;
+    height: 80px;
+    line-height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25vw;
+  }
+  .toolPagination ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+  .toolPagination ul li {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .toolPagination ul li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #f564a9;
+  }
+  .toolPagination ul li:hover:nth-of-type(2) ~ .bar {
+    left: 20%;
+  }
+  .toolPagination ul li:hover:nth-of-type(3) ~ .bar {
+    left: 40%;
+  }
+  .toolPagination ul li:hover:nth-of-type(4) ~ .bar {
+    left: 60%;
+  }
+  .toolPagination ul li:hover:nth-of-type(5) ~ .bar {
+    left: 80%;
+  }
+  .toolPagination ul .bar {
+    width: 20%;
+    background-color: #f564a9;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+  }
+
+
+

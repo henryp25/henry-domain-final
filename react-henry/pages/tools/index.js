@@ -1,26 +1,52 @@
 import React from 'react'
 import Link from 'next/link'
 import '../../styles/globals.css'
+import '../../styles/tools.css'
+
+
+
+
+
 
 function Tools() {
+
+
+
+
+
   return (
     <div className='toolsContainer'>
-    <div className='tools-Content'>
-      <h1>List of Tools </h1>
-      <p>I have created overtime to improve knowledge and test skills</p>
-    </div>
+      <div className='tools-Content'>
+        <h1>List of Tools </h1>
+        <p>I have created overtime to improve knowledge and test skills</p>
+      </div>
+      <div className='toolList'>
         <ul>
-          <li className='toolLink'>
-            <Link href="/currency-converter">Currency Convertor</Link>
-            <p>
-              Description
+            <li className='toolLink'>
+              <Link href="/currency-converter">Currency Convertor</Link>
               <p>
-                A simple currency converter to convert between different currencies
+                  A simple currency converter to convert between different currencies
               </p>
-
-            </p>
-          </li>
+            </li>
+            <li className='toolLink'>
+              <Link href="">Movie Data Base</Link>
+              <p>
+                  Tool Coming Soon
+              </p>
+            </li>
+          </ul>
+      </div>
+      {/* <div class="toolPagination">
+        <ul> 
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <div class="bar"></div>
         </ul>
+      </div> */}
+        
     </div>
   )
 }
