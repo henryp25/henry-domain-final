@@ -25,7 +25,7 @@ export default function About() {
     <>
       <Meta title="About" description="About page" />
       <div>
-          <div class="container">
+          <div class="about-Container">
             <header>
                 <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
                 <h1>Henry Price</h1>

@@ -17,7 +17,7 @@ function footer() {
                 </ul>
             </div>
         </footer>
-        </>
+    </>
 
   )
 }
