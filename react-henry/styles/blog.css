@@ -43,15 +43,9 @@
     border-radius: 5px;
 }
 
-.blog-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 900px;
-}
 
-.blog ul li {
+
+.blogList  li {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
@@ -63,7 +57,7 @@
     color: #282c34;
 
 }
-.blog ul li:before {
+.blogList  li:before {
     content: url('../public/images/icons8-blog-24.png');
     display: inline-block;
     width: 15px;
@@ -77,4 +71,23 @@
     font-size: small;
     font-style: italic;
     
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.blog-content ul li a {
+    text-decoration: none;
+    color: #282c34;
+}
+
+.blog-content ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
 }

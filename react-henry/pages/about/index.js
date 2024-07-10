@@ -28,12 +28,11 @@ export default function About() {
           <div class="container">
             <header>
                 <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
-                <h1>John Doe</h1>
-                <p>Web Developer | Designer | Content Creator</p>
+                <h1>Henry Price</h1>
+                <p>Web Developer | SEO Specialist | Content Creator</p>
                 <div class="social-media">
-                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/henry-price-9ab362b4/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/henryp25" target="_blank">GitHub</a>
                 </div>
             </header>
 
@@ -62,7 +61,7 @@ export default function About() {
           <section class="hobbies">
               <h2>Hobbies</h2>
               <ul>
-                  <li>Photography</li>
+                  <li>Football</li>
                   <li>Traveling</li>
                   <li>Gaming</li>
                   <li>Reading</li>

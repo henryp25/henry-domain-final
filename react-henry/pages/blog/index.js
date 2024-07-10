@@ -22,7 +22,7 @@ export default function Blog ({ allPostsData }) {
         Technical SEO Blog
       </h1>
       <Image src='/images/blog-header.jpg' alt='SEO' width={500} height={300} />
-      <ul>
+      <ul className='blogList'>
         {allPostsData.map(({ id, date, title, author }) => (
           <li key={id}>
             

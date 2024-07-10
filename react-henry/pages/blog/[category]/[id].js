@@ -33,15 +33,14 @@ export default function blogDetail({postData}) {
       <Meta title={postData.title} description={postData.description} />
       <div className="blog">
         <div className="blog-content">
-              
-            <div className="blogDetails">
+          <div className="blogDetails">
               <p>{postData.category}</p>
               {<Date dateString={postData.date} />}
             </div>
             <br />
             <br />
+            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
             
-            <Markdown>{postData.contentHtml}</Markdown>
         </div>
       </div>
       </>
