@@ -27,6 +27,7 @@ p {
 
 .header h1 {
     font-size: 3em;
+    color: #fffbfb;
     margin: 0;
 }
 
@@ -142,6 +143,7 @@ p {
 
 .conversion-box p {
     font-size: 2.5em;
+    color: #f9f9f9;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;

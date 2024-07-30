@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html lang="vulcan">
         <Head>
           <meta name="description" content="testing" />
-            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+            
             <Script id="google-tag-manager" strategy="afterInteractive">
             {`
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

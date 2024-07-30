@@ -1,8 +1,8 @@
 import '../styles/globals.css'
-import Navigation from './components/Navigation'
+import Navigation from '../app/components/Navigation'
 import Script from 'next/script'
 import Head from 'next/head'
-import Footer from './components/footer/Footer'
+import Footer from '../app/components/footer/Footer'
 
 
 

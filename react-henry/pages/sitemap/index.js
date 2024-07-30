@@ -3,6 +3,7 @@ import { sql } from '@vercel/postgres'
 import pg from 'pg';
 import '../../styles/sitemap.css'
 import '../../styles/globals.css'
+import Meta from '@/app/components/metaData';
 
 // require('dotenv').config({ path: '.env.local' });
 const currentDate = new Date().toDateString();
@@ -25,6 +26,7 @@ export async function getServerSideProps() {
 export default function htmlSitemap({posts}) {
     return (
         <>
+            <Meta title='HTML Sitemap' description='Sitemap' />
             <div>
                 <div>
                     <h1>HTML Sitemap</h1>

@@ -67,6 +67,11 @@
     color: black;
 }
 
+.toolLink:hover{
+    background-color: #000000;
+    color: white;
+}
+
 .toolsContainer .toolList ul li{
     list-style: none;
     text-transform: capitalize;

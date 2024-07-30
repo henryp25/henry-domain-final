@@ -29,9 +29,9 @@ function Tools() {
               </p>
             </li>
             <li className='toolLink'>
-              <Link href="">Movie Data Base</Link>
+              <Link href="/movie-app">Movie Data Base</Link>
               <p>
-                  Tool Coming Soon
+              A simple movie app to browse information on various films.
               </p>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 import React from 'react'
-import RootLayout from '../../app/layout'
+import RootLayout from '../layout'
 import Meta from '@/app/components/metaData'
 import '../../styles/about.css'
 

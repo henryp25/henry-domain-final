@@ -1,12 +1,18 @@
-import React from 'react';
-import '../styles/globals.css'; // Global CSS
-import RootLayout from '../app/layout'; // Adjust the path as necessary
+// pages/_app.js
+import '../styles/globals.css';
+import Head from 'next/head';
+import RootLayout from '../pages/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <RootLayout>
-      <Component {...pageProps} />
-    </RootLayout>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <RootLayout>
+        <Component {...pageProps} />
+      </RootLayout>
+    </>
   );
 }
 
