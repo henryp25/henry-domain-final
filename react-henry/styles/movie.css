@@ -3,7 +3,7 @@
 
 
 /* Entire Page */
-.page-container{
+.movieSearch{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -11,7 +11,8 @@
     margin: 0;
     padding: 0;
     background-color: #8b8686;
-    height: 1000px;
+    height: 100%;
+    width: 100%;
 }
 
 /* Header Component */
@@ -77,6 +78,7 @@
 
 .profileContainer .movieCard img{
   width: 100%;
+  
   height: auto;
 
 }
@@ -171,9 +173,16 @@
     .profileContainer{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center ;
     }
     .headerComponent{
       width: 100%;
+    }
+
+    .profileContainer .movieCard{
+      width: 100%;
+      max-width: 300px;
     }
 }
 

@@ -111,7 +111,7 @@ export default function MovieDetails({metadata}) {
         
   
   return (
-    <div>
+    <div className='movieSearch'>
         <Head>
           <title>
               {metadata.title}

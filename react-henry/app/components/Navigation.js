@@ -3,6 +3,7 @@ import React from 'react'
 import {useState, useCallback, useEffect} from 'react'
 import SearchBar from '../components/SearchBar/SearchBar'
 import Link from 'next/link'
+import Image from 'next/image'
 import '../../styles/globals.css'
 
 function Navigation() {
@@ -11,7 +12,7 @@ function Navigation() {
       <div className='nav-container'>
         <div className='nav-content'>
           <div className='logo'>
-            Henry Price
+            <Image src='images/logo.svg' width={50} height={50} alt='logo'  />
           </div>
           <ul className='navbar'>
             <li className='nav-item'>

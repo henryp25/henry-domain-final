@@ -3,9 +3,32 @@
     font-family: 'Poppins-Bold';
     src: url('../public/font/Poppins-Bold.ttf');
 }
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(
+      '/font/Ubuntu-Regular.ttf'
+    ) format('truetype'
+    );
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(
+      '/font/Ubuntu-Bold.ttf'
+    ) format('truetype'
+    );
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(
+      '/font/Ubuntu-Medium.ttf'
+    ) format('truetype'
+    );
+  }
 
 body {
-    font-family: 'Poppins-Bold';
+    font-family: 'Ubuntu-Regular';
     background-color: #282c34;
     color: #fff;
     margin: 0;
@@ -23,9 +46,10 @@ body {
 .nav {
     display: flex;
     background-color: #434343;
-    font-family: 'Agbalumo';
+    font-family: 'Ubuntu-Bold';
     padding: 0 1rem;
     width: 100%;
+    border-bottom: #282c34;
 }
 
 .nav-container{
@@ -71,7 +95,7 @@ body {
 }
 .nav-item a {
     color: #fff;
-    font-size: 45px;
+    font-size: 35px;
     text-transform: capitalize;
     text-decoration: none;
 }

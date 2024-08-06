@@ -10,10 +10,6 @@ import '../../styles/tools.css'
 
 function Tools() {
 
-
-
-
-
   return (
     <div className='toolsContainer'>
       <div className='tools-Content'>

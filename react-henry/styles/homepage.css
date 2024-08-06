@@ -1,9 +1,29 @@
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../public/font/Poppins-Bold.ttf');
-}
+    font-family: 'Ubuntu-Regular';
+    src: url(
+      '/font/Ubuntu-Regular.ttf'
+    ) format('truetype'
+    );
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(
+      '/font/Ubuntu-Bold.ttf'
+    ) format('truetype'
+    );
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(
+      '/font/Ubuntu-Medium.ttf'
+    ) format('truetype'
+    );
+  }
 
 /* CSS for screens smaller than 600px (like mobile devices) */
+
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
@@ -17,6 +37,15 @@
         padding: 5px;
         font-size: 10px;
     }
+
+    .bodyDescription {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
 }
 
 .container {
@@ -30,50 +59,58 @@
 
 .mainContent{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 10px;
     padding: 10px;
-    border: 4px solid black;
     border-radius: 5px;
 
 }
 .bodyDescription{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     padding: 10px;
-    border: 4px solid black;
     border-radius: 5px;
     background-color: #61dafb;
     color: #282c34;
     font-size: 20px;
-    font-style: oblique;
 }
 
 .bodyDescription article{
     margin: 10px;
     padding: 10px;
     width: 100%;
-    border: 4px solid black;
     border-radius: 5px;
     background-color: #61dafb;
     color: #282c34;
-    font-style: oblique;
+    font-family: 'Ubuntu-Regular', Courier, monospace;
 
+}
+
+.bannerInformation{
+    display: flex;
+    flex-direction:row;
 }
 
 .resources {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     margin: 10px;
+    width: 100%;
     background-color: #282c34;
     border: #282c34;
     border-radius: 5px;
     color: #fff;
 
+}
+
+.resources ul{
+    justify-content:left;
 }
 
 .resources ul li{
@@ -88,3 +125,32 @@
     content: "🔹";
     margin-right: 5px;
   }
+
+
+  @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .bodyDescription {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .bannerInformation{
+        display: flex;
+        flex-direction:column;
+    }
+}
