@@ -101,7 +101,7 @@ export default function MovieDetails({metadata}) {
        async function changingPagination(){
             if( movies.length >= 6){
                 const paginationClass = document.getElementsByClassName('nextPrev')
-                paginationClass[0].style.display = 'block'
+                paginationClass[0].style.display = 'flex'
 
             }
          }
@@ -142,8 +142,8 @@ export default function MovieDetails({metadata}) {
             }))}
         </div>
         <div className='nextPrev'>
-                <button type='button' onClick={nextPage}>Next Page</button>
-                <button type='button' onClick={prevPage}>Previous Page</button>
+            <button type='button' onClick={nextPage}>Next Page</button>
+            <button type='button' onClick={prevPage}>Previous Page</button>
         </div>  
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react'
 import RootLayout from '../layout'
 import Meta from '@/app/components/metaData'
 import '../../styles/about.css'
+import Image from 'next/image'
 
 
 async function getServerSideProps() {
@@ -27,7 +28,7 @@ export default function About() {
       <div>
           <div class="about-Container">
             <header>
-                <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
+            <Image src="/images/Henry-Arsenal.webp" width={400} height={400} alt='test'/>
                 <h1>Henry Price</h1>
                 <p>Web Developer | SEO Specialist | Content Creator</p>
                 <div class="social-media">
@@ -54,7 +55,8 @@ export default function About() {
                   <li>React</li>
                   <li>Node.js</li>
                   <li>UI/UX Design</li>
-                  <li>Content Creation</li>
+                  <li>SQL</li>
+                  <li>Python</li>
               </ul>
           </section>
 

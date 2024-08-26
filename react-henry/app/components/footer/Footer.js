@@ -5,7 +5,7 @@ import '../../../styles/globals.css'
 function footer() {
   return (
     <>
-        <footer className='nav'>
+        <footer className='footer'>
             <div className='footer-container'>
                 <ul className='footer-list'>
                     <li>

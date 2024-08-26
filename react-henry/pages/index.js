@@ -22,8 +22,7 @@ export default function Home() {
         </div>
         <div className='mainContent'>
             <div className='bannerInformation'>
-              
-              <Image src="/images/Henry-Arsenal.webp" width={400} height={400} alt='test'/>
+              <h1>Henry Price</h1>
               <div className='resources'>
                 <ul>
                   <li>React</li>

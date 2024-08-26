@@ -10,6 +10,7 @@ body {
     color: #333;
     width: 80%;
     margin: auto;
+    padding: 60px 0 0 0; 
     overflow: hidden;
 }
 
@@ -90,4 +91,11 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px){
+    .about-Container{
+      width: 100%;
+    }
 }

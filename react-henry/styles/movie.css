@@ -4,6 +4,7 @@
 
 /* Entire Page */
 .movieSearch{
+  justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -41,7 +42,8 @@
 }
 
 .searchQuery{
-  display: block;
+  display: flex;
+  justify-content: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 25px;
   margin-bottom: 1rem;
@@ -51,12 +53,14 @@
 }
 
 .searchQuery .query {
+  margin: 0 10px;
   font-weight: bold;
   color: #f6f4f4;
 }
 .profileContainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
     padding: 10px;
 }
@@ -158,6 +162,7 @@
 /* pagination */
 .nextPrev{
   display:none;
+  justify-content: center;
 }
 
 .nextPrev .show{

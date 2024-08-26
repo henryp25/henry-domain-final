@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import {useState, useCallback, useEffect} from 'react'
-import SearchBar from '../components/SearchBar/SearchBar'
+import SearchBar from '../SearchBar/SearchBar'
 import Link from 'next/link'
 import Image from 'next/image'
-import '../../styles/globals.css'
+import '../../../styles/globals.css'
 
 function Navigation() {
   return (

@@ -46,10 +46,11 @@ body {
 .nav {
     display: flex;
     background-color: #434343;
+
     font-family: 'Ubuntu-Bold';
     padding: 0 1rem;
-    width: 100%;
     border-bottom: #282c34;
+    z-index: 1;
 }
 
 .nav-container{
@@ -62,23 +63,8 @@ body {
 .nav-content{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-/* This is the Tailwind color for red-400 */
-
-
-
-
-
-.logo {
-    font-family: 'Agbalumo';
-    font-size: 23px;
-    color: brown;
-    size   : 20px;
-    height: 50px;
-    max-width: 50px;
-    font-weight: bold;
 }
 
 .nav-content ul {
@@ -102,6 +88,17 @@ body {
 
 .nav-item a:hover {
 color: red;
+}
+
+.mobileNav{
+    display: none;
+}
+
+
+.HamburgerMenu{
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -133,27 +130,60 @@ color: red;
 }
 
 
-/* About */
+/* Responsive Design */
 
 
 
 @media (max-width: 600px) {
+    .nav-item {
+        margin: 5px;
+        padding: 5px;
+    }
     .nav-item a {
         font-size: 20px;
     }
-}
-
-@media (max-width: 400px) {
-    .nav-item a {
-        font-size: 15px;
+    .nav {
+        padding: 0.5rem;
     }
-    .logo {
-        font-family: 'Agbalumo';
-        font-size: 15px;
-        color: brown;
-        height: 50px;
-        max-width: 50px;
-        font-weight: bold;
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav ul{
+        display: flex;
+        
+        justify-content: space-evenly;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 100%;
+        background:rgb(51, 51, 51);
+    }
+
+    .nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .desktopNav{
+        display: none;
+    }
+
+    .mobileNav{
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        background-color: #434343;
+    }
+
+
+
+    .HamburgerMenu{
+        position: absolute;
+        right: 2%;
+        cursor: pointer;
     }
 }
-
