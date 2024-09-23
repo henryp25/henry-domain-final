@@ -8,7 +8,7 @@ import '../../../styles/globals.css'
 
 function Navigation() {
   return (
-    <nav className='nav'>
+    <div className='nav'>
       <div className='nav-container'>
         <div className='nav-content'>
           <div className='logo'>
@@ -39,7 +39,7 @@ function Navigation() {
           {/* SearchBar component can be added here */}
         </div>
       </div>
-    </nav>
+    </div>
   )
 }
 export default Navigation

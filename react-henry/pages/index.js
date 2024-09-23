@@ -3,7 +3,7 @@ import Meta from '../app/components/metaData'
 import '../styles/homepage.css'
 import '../styles/globals.css'
 import Image from 'next/image'
-
+import CarouselList from '@/app/components/carouselList/CarouselList'
      
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Meta title="Home" description="Home page" />
       <main className="container">
-        <div h>
+        <div >
           <HeaderBanner />
         </div>
         <div>
@@ -23,21 +23,9 @@ export default function Home() {
         <div className='mainContent'>
             <div className='bannerInformation'>
               <h1>Henry Price</h1>
-              <div className='resources'>
-                <ul>
-                  <li>React</li>
-                  <li>Next JS</li>
-                  <li>SEO Best Practices</li>
-                  <li>Web Development</li>
-                  <li>Server Side Rendering</li>
-                  <li>Static Site Generation</li>
-                  <li>Web Performance</li>
-                  <li>Web Vitals</li>
-                  <li>Google Analytics</li>
-                </ul>
-              </div>
-      
+              
             </div>
+            <CarouselList />
             <div className='bodyDescription'>
             
               <article>

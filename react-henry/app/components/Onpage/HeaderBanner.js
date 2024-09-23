@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../../styles/banner.css'
 import Image from 'next/image'
 
 function HeaderBanner() {

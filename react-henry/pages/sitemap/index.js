@@ -27,7 +27,7 @@ export default function htmlSitemap({posts}) {
     return (
         <>
             <Meta title='HTML Sitemap' description='Sitemap' />
-            <div>
+            <div className='sitemap'>
                 <div>
                     <h1>HTML Sitemap</h1>
                 </div>

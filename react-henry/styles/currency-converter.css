@@ -54,8 +54,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
     max-width: 800px;
     background-color: #fff;
     border-radius: 8px;
@@ -69,8 +67,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -78,7 +74,10 @@ p {
 
 .currency-box h2 {
     font-size: 2em;
+    padding: 5px;
+    margin: 5px;
     margin: 0 0 10px;
+    
 }
 
 /* Selection Table */
