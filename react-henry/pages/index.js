@@ -1,5 +1,6 @@
 import HeaderBanner from '../app/components/Onpage/HeaderBanner'
 import Meta from '../app/components/metaData'
+import react, {useState} from 'react'
 import '../styles/homepage.css'
 import '../styles/globals.css'
 import Image from 'next/image'
@@ -7,6 +8,7 @@ import CarouselList from '@/app/components/carouselList/CarouselList'
      
 
 export default function Home() {
+
   return (
     <>
       <Meta title="Home" description="Home page" />
@@ -25,7 +27,7 @@ export default function Home() {
               <h1>Henry Price</h1>
               
             </div>
-            <CarouselList />
+            <CarouselList/>
             <div className='bodyDescription'>
             
               <article>

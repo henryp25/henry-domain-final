@@ -1,9 +1,4 @@
 
-* {
-    outline: 1px solid red; /* Highlights all elements with a red border */
-}
-
-
 @font-face {
     font-family: 'Poppins-Bold';
     src: url('../public/font/Poppins-Bold.ttf');
@@ -189,9 +184,6 @@ img{
         display: flex;
         height: 15vh;
         background-color: #434343;
-    }
-    .navbar{
-        
     }
 
 
